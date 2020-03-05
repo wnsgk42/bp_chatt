@@ -2,39 +2,24 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:weightSum="1"
-
+    android:id="@+id/Linearlayout_chat"
     >
-    <androidx.recyclerview.widget.RecyclerView
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:id="@+id/recyclerview_chat"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:id="@+id/TextView_nick"
         >
 
-    </androidx.recyclerview.widget.RecyclerView>
-    <LinearLayout
+    </TextView>
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:weightSum="1"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/TextView_msg"
         >
-        <EditText
-            android:layout_width="0"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:id="@+id/EditText_chat"
-            >
 
-        </EditText>
-        <Button
-            android:layout_width="80dp"
-            android:layout_height="match_parent"
-            android:text="->"
-            android:id="@+id/Button_chat"
-            >
-
-        </Button>
-    </LinearLayout>
+    </TextView>
 </LinearLayout>
